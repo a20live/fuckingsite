@@ -562,10 +562,11 @@
                     <div class="subscribe-form text-center">
                         <h3 class="blue-color">Envoie tes données à Google et à Facebook</h3>
                         <div class="space-20"></div>
-                        <form id="mc-form">
+                        <form id="mc-form" onsubmit="return VerifMail();">
                             <input type="email" class="control" placeholder="Entre ton numéro de CB" required="required" id="mc-email">
                             <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span>Envoyer</button>
                             <label class="mt10" for="mc-email"></label>
+                            
                         </form>
                     </div>
                 </div>
@@ -655,6 +656,8 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+
+    <SCRIPT language="JavaScript"> <!-- function VerifMail() { a = document.Verif.Mail.value; valide1 = false; for(var j=1;j<(a.length);j++){ if(a.charAt(j)=='@'){ if(j<(a.length-4)){ for(var k=j;k<(a.length-2);k++){ if(a.charAt(k)=='.') valide1=true; } } } } if(valide1==false) alert("Veuillez saisir une adresse email valide."); return valide1; } //--> </SCRIPT>
 </body>
 
 </html>
